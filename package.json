@@ -1,0 +1,16 @@
+{
+  "name": "proofchain-mvp",
+  "version": "1.0.0",
+  "description": "ProofChain MVP - Blockchain-based experience validation",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0"
+  }
+}
