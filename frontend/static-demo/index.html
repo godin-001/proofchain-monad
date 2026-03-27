@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProofChain — Powered by Monad</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { min-height: 100vh; background: #06060f; color: #f0f0ff; font-family: 'Space Grotesk', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; }
+  .logo { width: 64px; height: 64px; background: linear-gradient(135deg,#7c3aed,#4f46e5); border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: 24px; box-shadow: 0 0 40px rgba(124,58,237,.4); }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 10px; text-align: center; }
+  .gradient { background: linear-gradient(135deg,#a855f7,#6366f1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  p { color: #71717a; margin-bottom: 48px; text-align: center; font-size: 16px; }
+  .roles { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 860px; width: 100%; }
+  .role-card { border-radius: 20px; padding: 32px 28px; cursor: pointer; text-align: left; transition: all .25s; color: inherit; background: none; border: none; }
+  .role-card:hover { transform: translateY(-6px); }
+  .role-icon { font-size: 44px; margin-bottom: 16px; display: block; }
+  .role-title { font-weight: 700; font-size: 19px; margin-bottom: 10px; }
+  .role-desc { font-size: 13px; color: #a1a1aa; line-height: 1.6; }
+  .badge { margin-top: 40px; display: flex; align-items: center; gap: 8px; background: linear-gradient(135deg,#1a0533,#2d1060); border: 1px solid rgba(139,92,246,.4); border-radius: 10px; padding: 10px 20px; font-size: 13px; color: #c084fc; font-weight: 600; }
+  @media (max-width: 680px) { .roles { grid-template-columns: 1fr; } h1 { font-size: 26px; } }
+</style>
+</head>
+<body>
+  <div class="logo">⛓️</div>
+  <h1>¿Cómo vas a usar <span class="gradient">ProofChain</span>?</h1>
+  <p>Selecciona tu rol para continuar · Hackathon Demo — Monad Testnet</p>
+  <div class="roles">
+    <button class="role-card" onclick="window.location.href='student.html'"
+      style="background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25)">
+      <span class="role-icon">🎓</span>
+      <div class="role-title" style="color:#22d3ee">Soy Estudiante</div>
+      <div class="role-desc">Busco prácticas, construyo mi historial y gano tokens $PROOF</div>
+    </button>
+    <button class="role-card" onclick="window.location.href='company.html'"
+      style="background:rgba(244,114,182,.08);border:1px solid rgba(244,114,182,.25)">
+      <span class="role-icon">🏢</span>
+      <div class="role-title" style="color:#f472b6">Soy Empresa</div>
+      <div class="role-desc">Encuentro talento verificado on-chain y valido experiencias</div>
+    </button>
+    <button class="role-card" onclick="window.location.href='student.html'"
+      style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.25)">
+      <span class="role-icon">🏛️</span>
+      <div class="role-title" style="color:#a855f7">Soy Universidad</div>
+      <div class="role-desc">Gestiono el servicio social de mis alumnos de forma automatizada</div>
+    </button>
+  </div>
+  <div class="badge">🔴 Powered by Monad · Mainnet coming soon</div>
+</body>
+</html>
